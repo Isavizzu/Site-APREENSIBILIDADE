@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pcd.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="conteiner">
+
+        <section class="cabecalho">
+            <h1>O Mundo da
+                 Acessibilidade</h1>
+            <img src="../img/pexels-ann-h-3095954.jpg" alt="Ilustração de uma vaga para pessoas com limitações." width="180px">
+
+        </section>
+
+        <section class="segunda">
+            <section class="outrosartigos">
+                <ul>
+                    <li><a href="../html/pcd.html">Quem é PcD?</a></li>
+                    <li><a href="../html/visao.html">Deficientes Visuais, quem são?</a></li>
+                    <li><a href="../html/audicao.html">Deficiência Auditiva, o que é?</a></li>
+                    <li><a href="../html/espectro.html">Espectro Autista, o que é?</a></li>
+                    <li><a href="../html/daltonismo.html">Daltonismo e a sua definição.</a></li>
+                </ul>
+            </section>
+            <section class="conteudo">
+                <h2>Espectro autista, o que é?</h2>
+                <p> O transtorno do Espectro autista (TEA) é uma condição da qual o indivíduo tem suas 
+                    
+                     interações sociais comprometidas, sendo um distúrbio do neurodesenvolvimento definido  
+                    
+                    por desenvolvimento atípico, problemas na comunicação e na interação social, manifestações 
+                    
+                     comportamentais e pode mostrar um repertório limitado de interesses e atividades. </p>
+                <section class="imagens">
+                    <img class="img" src="../img/6.jpg" alt="Pessoa se isolando" width="300px" height="300px">
+                    <img class="img" src="../img/5.jpg" alt="Pessoas interagindo uma com as outras" widht="300px" height="300px">
+                </section>
+                <h3>Como a acessibilidade é importante para o cotidiano de um autista? </h3>
+                <p>Uma pessoa autista tem algumas dificuldades em relação a interação interpessoal, isto é, 
+
+                    relação com outras pessoas. Esse transtorno atrapalha a vida diária de um indivíduo com o 
+                   
+                    espectro autista, assim uma conscientização para a população geral em relação à essa 
+                   
+                    limitação ajudaria tais pessoas a serem melhores tratados e incluídos na sociedade. Mas, além 
+                   
+                    disso, a melhor sinalização de espaços públicos, a utilização da técnica de edição para 
+                   
+                    textos para pessoas com dificuldades de compreensão de leitura, o design responsável em 
+                   
+                    uso de tecnologias e aplicativos, ajudariam, de certa forma, o cotidiano dos autistas, 
+                   
+                    aumentando suas autonomias. </p>
+
+                <form class="avaliar" action="" method="post">
+                    <h4>Avalie-nos aqui!</h4>
+                    <section class="pontos">
+                      <section>
+                      <label class="area">Descrição: </label><br>
+                    <textarea class="area" id="comentario" name="comentario" rows="5" cols="33" placeholder="Escreva aqui seu comentário..." ></textarea>
+                      </section>
+                    <ul class="avaliacao">
+                      <li class="star-icon ativo" data-avaliacao="1"></li>
+                      <li class="star-icon" data-avaliacao="2"></li>
+                      <li class="star-icon" data-avaliacao="3"></li>
+                      <li class="star-icon" data-avaliacao="4"></li>
+                      <li class="star-icon" data-avaliacao="5"></li>
+                    </ul>
+                    </section>
+                      <input type="hidden" name="_captcha" id="_captcha" value="false">
+                      <input type="hidden" name="_next" id="_next" value="http://127.0.0.1:5500/html/agradecimento.html">
+                      <input class="botao" type="submit" name="botao" id="botao" value="Enviar"/>
+                    </form>
+            </section>
+        </section>
+
+    </section>
+    <footer>
+        <p>Espero que tenha gostado da leitura!</p>
+    </footer>
+    
+</body>
+      <script>
+      var stars = document.querySelectorAll('.star-icon');
+      document.addEventListener('click', function(e){
+      var classStar = e.target.classList;
+      if(!classStar.contains('ativo')){
+      stars.forEach(function(star){
+      star.classList.remove('ativo');
+      });
+      classStar.add('ativọ');
+      console.log(e.target.getAttribute("data-avaliacao"));
+      }
+      });
+      </script>
+</html>

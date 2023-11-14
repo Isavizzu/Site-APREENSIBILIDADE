@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pcd.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="conteiner">
+
+        <section class="cabecalho">
+            <h1>O Mundo da
+                 Acessibilidade</h1>
+            <img src="../img/pexels-ann-h-3095954.jpg" alt="Ilustração de uma vaga para pessoas com limitações." width="180px">
+
+        </section>
+
+        <section class="segunda">
+            <section class="outrosartigos">
+                <ul>
+                    <li><a href="../html/pcd.html">Quem é PcD?</a></li>
+                    <li><a href="../html/visao.html">Deficientes Visuais, quem são?</a></li>
+                    <li><a href="../html/audicao.html">Deficiência Auditiva, o que é?</a></li>
+                    <li><a href="../html/espectro.html">Espectro Autista, o que é?</a></li>
+                    <li><a href="../html/daltonismo.html">Daltonismo e a sua definição.</a></li>
+                </ul>
+            </section>
+            <section class="conteudo">
+                <h2>Deficientes visuais, quem são?</h2>
+                <p>Deficientes visuais são aqueles que tem perda total ou parcial da sua visão.
+                    Segundo a pesquisa do Instituto Brasileiro de Geografia e Estatística, em 2010, havia 7 milhões 
+                    de brasileiros com alguma deficiência visual, contudo, de acordo com o levantamento de 
+                    dados da Pesquisa Nacional da Saúde (PSN) , de 2019, esses números aumentaram para 17,3 
+                    milhões de pessoas. 
+                    As duas classificações principais da deficiência visual é cegueira e a outra baixa visão. 
+                </p>
+                <section class="imagens">
+                    <img class="img" src="../img/3.jpg" alt="Uma pessoa com problema de visão usando o celular por meio da audição" width="300px" height="300px">
+                    <img class="img" src="../img/4.jpg" alt="Pessoa com problema de visão usando uma bengala" widht="300px" height="300px">
+                </section>
+                <h3>Quais são alguns tipos de acessibilidade no dia a dia de um deficiente visual? </h3>
+                <ul>
+                    <li>O piso tátil inclusive pode ser colorido, devido à nem todos os deficientes visuais perderem a visão total;  </li>
+                    <li>Retirar todos os obstáculos presentes em áreas de circulação;</li>
+                    <li>Ter orientações em braile em botões nos elevadores;</li>
+                    <li>Ter opções de materiais em braile, nas faculdades, escolas e bibliotecas; </li>
+                    <li>Sinais luminosos em locais públicos devem emitir sons.</li>
+                </ul>
+
+                <form class="avaliar" action="https://formsubmit.co/isabelledemelovizzu@gmail.com" method="post">
+                  <h4>Avalie-nos aqui!</h4>
+                  <section class="pontos">
+                    <section>
+                    <label class="area">Descrição: </label><br>
+                  <textarea class="area" id="comentario" name="comentario" rows="5" cols="33" placeholder="Escreva aqui seu comentário..." required></textarea>
+                    </section>
+                  <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                  </ul>
+                  </section>
+                  <input type="hidden" name="_captcha" id="_captcha" value="false">
+                  <input type="hidden" name="_next" id="_next" value="http://127.0.0.1:5500/html/agradecimento.html">
+                  <input class="botao" type="submit" name="botao" id="botao" value="Enviar"/>
+                </form>
+            </section>
+
+
+
+        </section>
+
+    </section>
+    <footer>
+        <p>Espero que tenha gostado da leitura!</p>
+    </footer>
+    
+</body>
+      <script>
+      var stars = document.querySelectorAll('.star-icon');
+      document.addEventListener('click', function(e){
+      var classStar = e.target.classList;
+      if(!classStar.contains('ativo')){
+      stars.forEach(function(star){
+      star.classList.remove('ativo');
+      });
+      classStar.add('ativọ');
+      console.log(e.target.getAttribute("data-avaliacao"));
+      }
+      });
+      </script>
+</html>

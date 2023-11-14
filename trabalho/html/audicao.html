@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pcd.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="conteiner">
+
+        <section class="cabecalho">
+            <h1>O Mundo da
+                 Acessibilidade</h1>
+            <img src="../img/pexels-ann-h-3095954.jpg" alt="Ilustração de uma vaga para pessoas com limitações." width="180px">
+
+        </section>
+
+        <section class="segunda">
+            <section class="outrosartigos">
+                <ul>
+                    <li><a href="../html/pcd.html">Quem é PcD?</a></li>
+                    <li><a href="../html/visao.html">Deficientes Visuais, quem são?</a></li>
+                    <li><a href="../html/audicao.html">Deficiência Auditiva, o que é?</a></li>
+                    <li><a href="../html/espectro.html">Espectro Autista, o que é?</a></li>
+                    <li><a href="../html/daltonismo.html">Daltonismo e a sua definição.</a></li>
+                </ul>
+            </section>
+            <section class="conteudo">
+                <h2>Deficiência auditiva, o que é?</h2>
+                <p>A deficiência auditiva é a perca total ou parcial da audição, além disso, a pessoa pode perder a                    
+                     habilidade auditiva em um ou em ambos ouvidos. Geralmente, a causa para tal deficiência é                    
+                     os ruídos exagerados e o envelhecimento ou ter nascido com o problema. </p>
+                <section class="imagens">
+                    <img class="img" src="../img/9.jpg" alt="Pessoas se comunicando em libras" width="300px" height="300px">
+                    <img class="img" src="../img/10.jpg" alt="Pessoas conversando em libras online" widht="300px" height="300px">
+                </section>
+                <h3>Como a acessibilidade é importante para o dia a dia de um deficiente auditivo? </h3>
+                <p>A acessibilidade é essencial para uma pessoa com deficiência auditiva, uma delas é a língua de 
+                    sinais, libras, que permite que indivíduos que já nasceram com a limitação possam se                    
+                    comunicar mesmo sem ser com palavras faladas. Além disso, com essa língua, programas de                    
+                    televisão ou apresentações podem transmitir tudo aos deficientes auditivos com a língua de                    
+                    sinais ou através de legendas, permitindo que todas as pessoas possam tirar proveito do                   
+                   programa. </p>
+
+                   <form class="avaliar" action="https://formsubmit.co/isabelledemelovizzu@gmail.com" method="post">
+                    <h4>Avalie-nos aqui!</h4>
+                    <section class="pontos">
+                      <section>
+                      <label class="area">Descrição: </label><br>
+                    <textarea class="area" id="comentario" name="comentario" rows="5" cols="33" placeholder="Escreva aqui seu comentário..." required></textarea>
+                      </section>
+                    <ul class="avaliacao">
+                      <li class="star-icon ativo" data-avaliacao="1"></li>
+                      <li class="star-icon" data-avaliacao="2"></li>
+                      <li class="star-icon" data-avaliacao="3"></li>
+                      <li class="star-icon" data-avaliacao="4"></li>
+                      <li class="star-icon" data-avaliacao="5"></li>
+                    </ul>
+                    </section>
+                    <input type="hidden" name="_captcha" id="_captcha" value="false">
+                    <input type="hidden" name="_next" id="_next" value="http://127.0.0.1:5500/html/agradecimento.html">
+                    <input class="botao" type="submit" name="botao" id="botao" value="Enviar"/>
+                  </form>
+                    </section>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <p>Espero que tenha gostado da leitura!</p>
+    </footer>
+    
+</body>
+      <script>
+      var stars = document.querySelectorAll('.star-icon');
+      document.addEventListener('click', function(e){
+      var classStar = e.target.classList;
+      if(!classStar.contains('ativo')){
+      stars.forEach(function(star){
+      star.classList.remove('ativo');
+      });
+      classStar.add('ativọ');
+      console.log(e.target.getAttribute("data-avaliacao"));
+      }
+      });
+      </script>
+</html>
